@@ -1,22 +1,36 @@
 import { Template } from 'meteor/templating';
-import { ReactiveVar } from 'meteor/reactive-var';
+// import { ReactiveVar } from 'meteor/reactive-var';
 
 import './main.html';
 
-Template.hello.onCreated(function helloOnCreated() {
-  // counter starts at 0
-  this.counter = new ReactiveVar(0);
-});
+// Template.allMessageView.onCreated(function helloOnCreated() {
+//   this.messages = [];
+// });
 
-Template.hello.helpers({
-  counter() {
-    return Template.instance().counter.get();
+Template.allMessageView.helpers({
+  messages() {
+    //return Template.instance().messages.get();
+    Meteor.call('getAllMessages', function(err, res){
+      console.log(res);
+      return {entries: res};
+    });
   },
 });
 
-Template.hello.events({
-  'click button'(event, instance) {
-    // increment the counter when button is clicked
-    instance.counter.set(instance.counter.get() + 1);
+Template.addMessageForm.events({
+  'submit form'(event, instance) {
+
+    // Prevent Form Action
+    event.preventDefault();
+
+    // Get Message
+    var message = event.target.userMessage.value;
+    console.log(message);
+
+    // Submit Message to Database
+    Meteor.call('addMessage', message, function(err, res){
+      console.log('Submitted Message!')
+    });
+
   },
 });
