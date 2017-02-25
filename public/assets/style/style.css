@@ -18,3 +18,14 @@ body {
   padding-left: 25px;
   padding-right: 25px;
 }
+
+body{
+  background-color: #997366;
+}
+
+.panel-warning > .panel-heading {
+    background-image: none;
+    background-color: #998066;
+    color: white;
+
+}
