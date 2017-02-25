@@ -15,7 +15,6 @@ firebase.initializeApp(config);
 // Declare DB Variable
 var database = firebase.database();
 
-
 // Firebase DB was Updated
 database.ref().on("value", function(snapshot) {
   
