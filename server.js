@@ -19,7 +19,7 @@ app.get('/', function (req, res) {
 })
 
 app.get('*', function(req, res) {
-  res.send('<h1>Hey Sh*t Head!</h1> <p>Navigate back to the <a href="/">homepage</a>!</p>'); 
+  res.render('404'); 
 })
 
 // ============================================================
