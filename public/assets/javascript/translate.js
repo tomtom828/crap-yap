@@ -135,7 +135,7 @@ function convertToEmoji(data){
 	$('#messages').prepend(
 		"<div class='panel panel-warning'>" + 
 			"<div class='panel panel-heading'>" + 
-				"<button data-message='" + dataItem.translation + "' class='btn btn-sm btn-info pull-right speakButton' type='button' style='margin-top: -5px;'>Speak!</button>" + 
+				"<button data-message='" + dataItem.translation + "' class='btn btn-sm btn-warning pull-right speakButton' type='button' style='margin-top: -5px;'>Speak!</button>" + 
 				dataItem.author + " on " + dataItem.time +
 				"</div>" + 
 			"<div class='panel-body'>"+poopString+"</div>"+

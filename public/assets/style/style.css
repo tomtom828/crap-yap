@@ -13,14 +13,17 @@ body {
 }
 
 #chatRoomMessages {
-  height: 440px;
+  height: 420px;
   overflow-y: scroll;
   padding-left: 25px;
   padding-right: 25px;
 }
 
-body{
-  background-color: #AA6C39;
+#body-content{
+  background-color: #cce6ff;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
 }
 
 .panel > .panel-heading{
@@ -35,24 +38,27 @@ body{
     color: white;
 }
 .navbar{
-  background-image: none;
-  background-color: #D49A6A;
-  color: white;
+  /*background-image: none;*/
+  /*background-color: #;*/
+  /*color: white;*/
 }
 
 .nav{
-  color: white;
+  /*color: white;*/
 }
 .pooText{
-  background-color: #804515;
+  /*background-color: #D49A6A;*/
 }
 .pooText a{
-  color: white;
+  /*color: black;*/
+}
+.pooText a:hover{
+  /*background-color: #D49A6A;*/
 }
 #white{
-  color: white;
+  /*color: white;*/
 }
 #branded{
   display: inline;
-  color: white;
+  /*color: white;*/
 }
