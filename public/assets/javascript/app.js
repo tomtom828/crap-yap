@@ -1,5 +1,3 @@
-// Main JavaScript File for Fire Base
-
 // Initialize Firebase
 var config = {
     apiKey: "AIzaSyDe5w4ynuTZh6PEhJZMGmhX1NjFWy3-BXE",
@@ -22,6 +20,7 @@ database.ref().on("value", function(snapshot) {
 
   console.log(data);
 
+  translate(data);
 });
 
 
