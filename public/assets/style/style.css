@@ -38,22 +38,22 @@ body {
     color: white;
 }
 .navbar{
-  background-image: none;
-  background-color: #;
+  /*background-image: none;*/
+  /*background-color: #;*/
   /*color: white;*/
 }
 
 .nav{
-  color: white;
+  /*color: white;*/
 }
 .pooText{
   /*background-color: #D49A6A;*/
 }
 .pooText a{
-  color: black;
+  /*color: black;*/
 }
 .pooText a:hover{
-  background-color: #D49A6A;
+  /*background-color: #D49A6A;*/
 }
 #white{
   /*color: white;*/
