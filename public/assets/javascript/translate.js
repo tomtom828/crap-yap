@@ -123,9 +123,15 @@ function convertToEmoji(data){
     			poopString += "<i class='em em-toilet'></i>";
     		}
     		else if(dataItem.translation[i] == "/"){
-    			poopString += " ";
+    			poopString += "<i class='em em-boom'></i>";
+    		}
+    		else if(dataItem.translation[i] == " "){
+    			poopString += "<b class='em'>"+dataItem.translation[i]+"</b>";
+    		}
+    		else{
+    			poopString += "<b>"+dataItem.translation[i]+"</b>";
     		}
     	}
-	$('#messages').append("<div class='panel panel-warning'> <div class='panel panel-heading'>"+dataItem.author+" Is this working</div><div class='panel-body'>"+poopString+"</div></div>");
+	$('#messages').prepend("<div class='panel panel-warning'> <div class='panel panel-heading'>"+dataItem.author+" on "+dataItem.time+"</div><div class='panel-body'>"+poopString+"</div></div>");
 	}
 }
