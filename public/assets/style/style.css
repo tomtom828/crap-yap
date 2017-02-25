@@ -18,3 +18,41 @@ body {
   padding-left: 25px;
   padding-right: 25px;
 }
+
+body{
+  background-color: #AA6C39;
+}
+
+.panel > .panel-heading{
+  background-image: none;
+  background-color: #552700;
+  color: white;
+}
+
+.panel-warning > .panel-heading {
+    background-image: none;
+    background-color: #997366;
+    color: white;
+}
+.navbar{
+  background-image: none;
+  background-color: #D49A6A;
+  color: white;
+}
+
+.nav{
+  color: white;
+}
+.pooText{
+  background-color: #804515;
+}
+.pooText a{
+  color: white;
+}
+#white{
+  color: white;
+}
+#branded{
+  display: inline;
+  color: white;
+}

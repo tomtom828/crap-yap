@@ -41,7 +41,7 @@ $(document).ready(function(){
     // Get Author Name and Message
     var message = $('#messageBox').val().trim();
     var author = $('#nameBox').val().trim();
-
+    $('#messageBox').val('');
     // Get Date
     var dateString = moment().format('MMMM Do YYYY, h:mm:ss a').toString();
 
