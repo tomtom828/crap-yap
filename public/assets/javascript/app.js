@@ -1,3 +1,7 @@
+// Import Sound Effects
+var fartSound = new Audio('/assets/sounds/fart.mp3');
+var toiletSound = new Audio('/assets/sounds/toilet.mp3');
+
 // Initialize Firebase
 var config = {
     apiKey: "AIzaSyDe5w4ynuTZh6PEhJZMGmhX1NjFWy3-BXE",
@@ -58,7 +62,46 @@ $(document).ready(function(){
   });
 
 
+  // Speak Button (Translate Morse Code to Sound)
+  $(document).on('click', '.speakButton', function(){
 
+    // NEED to FINISH THIS PART <<<<<<#################@@@@@@@@@@@@@@
+    var translationString = './.--/?????---/';
 
+    // Split Sound String
+    var translationArray = translationString.split('');
 
-})
+    // Remove anything that's not a '.' or '-' or '/'
+    var messageArray = [];
+    for(var i=0; i<translationArray.length; i++){
+      if(translationArray[i] == '.' || translationArray[i] == '-' || translationArray[i] == '/'){
+        messageArray.push(translationArray[i]);
+      }
+    }
+
+    // Loop through Message and Play Sounds
+    for(var i=0; i<messageArray.length; i++){
+
+      // Magical Code to have Sounds Wait...
+      // http://stackoverflow.com/questions/24293376/javascript-for-loop-with-timeout
+      (function(ind) {
+         setTimeout(function(){
+          // Play Fart
+          if(messageArray[ind] == '.'){
+            fartSound.play();
+            console.log('fart')
+          }
+
+          // Play Toilet
+          else if(messageArray[ind] == '-'){
+            toiletSound.play();
+            console.log('toilet')
+          }
+        }, 1000 + (1000 * ind));
+      })(i);
+
+    }
+
+  });
+
+});
