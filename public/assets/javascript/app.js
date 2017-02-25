@@ -54,7 +54,8 @@ $(document).ready(function(){
       alert('Hey Sh*thead, add a message!');
       return;
     }
-
+    //Clear out the textbox when we submit.
+    $('#messageBox').val('');
     // Push New Data to Firebase
     database.ref().push({
       author: author,
