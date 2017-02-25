@@ -106,4 +106,30 @@ function translate (message){
 function convertToEmoji(data){
 	console.log("Data in the convertToEmoji function");
 	console.log(data);
+	var dataCollection = data; 
+	for(var key in dataCollection){
+		// skip loop if the property is from prototype
+    	if (!dataCollection.hasOwnProperty(key)) continue;
+    	//creates a variable called dataItem that corresponds to the item we are concerned with inside dataCollection
+    	var dataItem = dataCollection[key];
+    	console.log(dataItem.message);
+    	var morseCode = dataItem.translation;
+    	console.log(morseCode);
+    	var poopString = "";
+    	for(var i = 0; i < morseCode.length; i++){
+    		console.log(dataItem.translation[i]);
+    		if(dataItem.translation[i] == "."){
+    			poopString += "<i class='em em-hankey'></i>";
+    		}
+    		else if(dataItem.translation[i] == "-"){
+    			poopString += "<i class='em em-toilet'></i>";
+    			console.log("Toilet");
+    		}
+    		else if(dataItem.translation[i] == "/"){
+    			poopString += " "
+    			console.log("Slash");
+    		}
+    	}
+    	console.log(poopString);
+	}
 }
