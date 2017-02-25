@@ -1,0 +1,119 @@
+{{!-- Chat Room Content --}}
+<div class="row">
+
+
+  {{!-- View All Messages --}}
+  <div class="col-md-8">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><center>The Public Scat Room</center></h3>
+      </div>
+      <div class="panel-body">
+
+        {{!-- Toggle English and Poo Text --}}
+        <div class="row">
+          <div class="col-xs-12">
+              <ul class="nav nav-pills nav-justified">
+                <li class="active"><a href="#">Poo Text</a></li>
+                <li class="disabled"><a href="#">Human Text</a></li>
+              </ul>
+              <br>
+          </div>
+        </div>
+
+
+        <div id="chatRoomMessages" class="row">
+
+          {{!-- View All Messages --}}
+          <div class="col-xs-12">
+
+            {{!-- Iterate Over All Messages --}}
+
+                      <div class="panel panel-warning">
+              <div class="panel-heading">Tommy [Date]</div>
+              <div class="panel-body">
+                Message in Poo Code!
+              </div>
+            </div>
+
+                      <div class="panel panel-warning">
+              <div class="panel-heading">Steve [Date]</div>
+              <div class="panel-body">
+                Message in Poo Code!
+              </div>
+            </div>
+
+                        <div class="panel panel-warning">
+              <div class="panel-heading">Steve [Date]</div>
+              <div class="panel-body">
+                Message in Poo Code!
+              </div>
+            </div>
+
+
+                    <div class="panel panel-warning">
+              <div class="panel-heading">Steve [Date]</div>
+              <div class="panel-body">
+                Message in Poo Code!
+              </div>
+            </div>
+
+
+                    <div class="panel panel-warning">
+              <div class="panel-heading">Steve [Date]</div>
+              <div class="panel-body">
+                Message in Poo Code!
+              </div>
+            </div>
+
+
+                    <div class="panel panel-warning">
+              <div class="panel-heading">Steve [Date]</div>
+              <div class="panel-body">
+                Message in Poo Code!
+              </div>
+            </div>
+
+
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+
+
+  {{!-- Send Messages --}}
+  <div class="col-md-4 col-xs-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><center>Crappy Messages Here</center></h3>
+      </div>
+      <div class="panel-body">
+        <div class="row">
+          {{!-- User Input Box --}}
+          <div class="col-md-12 col-xs-12">
+            <textarea id="messageBox" rows="8" class="input-required form-control">Hello Crappy World!</textarea>
+          </div>
+          {{!-- User Submit Button --}}
+          <div class="col-md-12 col-xs-12">
+            <center>
+              <br>
+              <button type="button" class="btn btn-danger">Send Message</button>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>

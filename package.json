@@ -1,12 +1,29 @@
 {
   "name": "crap-yap",
-  "private": true,
+  "version": "1.0.0",
+  "description": "The crappiest chat app known to man!",
+  "main": "server.js",
   "scripts": {
-    "start": "meteor run"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomtom28/crap-yap.git"
+  },
+  "keywords": [
+    "stupid",
+    "hackathon",
+    "2017"
+  ],
+  "author": "tomtom28 & sfreeman422",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomtom28/crap-yap/issues"
+  },
+  "homepage": "https://github.com/tomtom28/crap-yap#readme",
   "dependencies": {
-    "babel-runtime": "6.18.0",
-    "meteor-node-stubs": "~0.2.0",
-    "socket.io": "^1.7.3"
+    "express": "^4.14.1",
+    "express-handlebars": "^3.0.0"
   }
 }

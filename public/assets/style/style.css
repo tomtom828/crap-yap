@@ -1,0 +1,18 @@
+/* Account for Nav Bar */
+body {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+/* Chat Room */
+#messageBox {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 10px;
+}
+
+#chatRoomMessages {
+  height: 440px;
+  overflow-y: scroll;
+}
