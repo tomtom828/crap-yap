@@ -25,106 +25,13 @@
         <div id="chatRoomMessages" class="row">
 
           {{!-- View All Messages --}}
-          <div class="col-xs-12">
-
-            {{!-- Iterate Over All Messages --}}
-
-                      <div class="panel panel-warning">
-              <div class="panel-heading">Tommy [Date]</div>
-              <div class="panel-body">
-                <i class="em em-toilet"></i>
-                <i class="em em-hankey"></i>
-                <i class="em em-hankey"></i>
-                <i class="em em-boom"></i>
-                <i class="em em-hankey"></i>
-                <i class="em em-toilet"></i>
-                <i class="em em-hankey"></i>
-                <i class="em em-hankey"></i>
-                <i class="em em-hankey"></i>
-
-                <b class="em"> </b>
-
-                <i class="em em-toilet"></i>
-                <i class="em em-hankey"></i>
-                <i class="em em-hankey"></i>
-                <i class="em em-boom"></i>
-                <i class="em em-hankey"></i>
-                <i class="em em-toilet"></i>
-                <i class="em em-hankey"></i>
-                <i class="em em-toilet"></i>
-                <i class="em em-hankey"></i>
-                <i class="em em-hankey"></i>
-                <i class="em em-boom"></i>
-                <i class="em em-hankey"></i>
-
-                <b class="em">?</b>
-
-                <i class="em em-toilet"></i>
-                <i class="em em-hankey"></i>
-                <i class="em em-toilet"></i>
-                <i class="em em-hankey"></i>
-                <i class="em em-hankey"></i>
-                <i class="em em-boom"></i>
-                <i class="em em-hankey"></i>
-                <i class="em em-toilet"></i>
-                <i class="em em-hankey"></i>
-
-                <b class="em">!</b>
-
-              </div>
-            </div>
-
-                      <div class="panel panel-warning">
-              <div class="panel-heading">Steve [Date]</div>
-              <div class="panel-body">
-                Message in Poo Code!
-              </div>
-            </div>
-
-                        <div class="panel panel-warning">
-              <div class="panel-heading">Steve [Date]</div>
-              <div class="panel-body">
-                Message in Poo Code!
-              </div>
-            </div>
-
-
-                    <div class="panel panel-warning">
-              <div class="panel-heading">Steve [Date]</div>
-              <div class="panel-body">
-                Message in Poo Code!
-              </div>
-            </div>
-
-
-                    <div class="panel panel-warning">
-              <div class="panel-heading">Steve [Date]</div>
-              <div class="panel-body">
-                Message in Poo Code!
-              </div>
-            </div>
-
-
-                    <div class="panel panel-warning">
-              <div class="panel-heading">Steve [Date]</div>
-              <div class="panel-body">
-                Message in Poo Code!
-              </div>
-            </div>
-
-
-
+          <div class="col-xs-12" id="messages">
           </div>
 
 
         </div>
       </div>
     </div>
-
-
-
-
-
   </div>
 
 
@@ -139,13 +46,13 @@
           {{!-- User Name Box --}}
           <div class="col-md-12 col-xs-12">
             <center><h4>Your Crappy Name</h4></center>
-            <input id="nameBox" type="text" class="input-required form-control" value="Anonymous">
+            <input id="nameBox" type="text" class="input-required form-control" placeholder="Anonymous">
           </div>
           <br>
           {{!-- User Input Box --}}
           <div class="col-md-12 col-xs-12">
             <center><h4>Your Crappier Message</h4></center>
-            <textarea id="messageBox" rows="8" class="input-required form-control">Hello Crappy World!</textarea>
+            <textarea id="messageBox" rows="8" class="input-required form-control" placeholder="Hello Crappy World!"></textarea>
           </div>
           {{!-- User Submit Button --}}
           <div class="col-md-12 col-xs-12">

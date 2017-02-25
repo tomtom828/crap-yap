@@ -19,6 +19,8 @@ database.ref().on("value", function(snapshot) {
   data = snapshot.val();
 
   console.log(data);
+
+  convertToEmoji(data);
 });
 
 
@@ -44,8 +46,6 @@ $(document).ready(function(){
       alert('Hey Sh*thead, add a message!');
       return;
     }
-
-    translate(message);
 
     // Push New Data to Firebase
     database.ref().push({
