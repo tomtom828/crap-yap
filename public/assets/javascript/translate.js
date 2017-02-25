@@ -114,6 +114,7 @@ function translate (data){
 				morseTranslation += letter; 
 			}
 		}
+		//Return our fully translated phrase. 
 		return morseTranslation;
 	}
 }
