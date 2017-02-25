@@ -47,8 +47,6 @@ $(document).ready(function(){
       return;
     }
 
-    translate(message);
-
     // Push New Data to Firebase
     database.ref().push({
       author: author,

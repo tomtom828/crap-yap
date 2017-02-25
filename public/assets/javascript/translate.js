@@ -104,32 +104,28 @@ function translate (message){
 }
 
 function convertToEmoji(data){
-	console.log("Data in the convertToEmoji function");
-	console.log(data);
 	var dataCollection = data; 
 	for(var key in dataCollection){
 		// skip loop if the property is from prototype
     	if (!dataCollection.hasOwnProperty(key)) continue;
     	//creates a variable called dataItem that corresponds to the item we are concerned with inside dataCollection
     	var dataItem = dataCollection[key];
-    	console.log(dataItem.message);
+    	//Accesses the morse code translation from our dataItem.
     	var morseCode = dataItem.translation;
-    	console.log(morseCode);
+    	//This will eventually be our full emoji string that we will push to the page. 
     	var poopString = "";
+    	//Goes through each of the morse code chars in the translation and builds out the poopString. 
     	for(var i = 0; i < morseCode.length; i++){
-    		console.log(dataItem.translation[i]);
     		if(dataItem.translation[i] == "."){
     			poopString += "<i class='em em-hankey'></i>";
     		}
     		else if(dataItem.translation[i] == "-"){
     			poopString += "<i class='em em-toilet'></i>";
-    			console.log("Toilet");
     		}
     		else if(dataItem.translation[i] == "/"){
-    			poopString += " "
-    			console.log("Slash");
+    			poopString += " ";
     		}
     	}
-    	console.log(poopString);
+	$('#messages').append("<div class='panel panel-warning'> <div class='panel panel-heading'>"+dataItem.author+" Is this working</div><div class='panel-body'>"+poopString+"</div></div>");
 	}
 }
