@@ -136,8 +136,15 @@
       </div>
       <div class="panel-body">
         <div class="row">
+          {{!-- User Name Box --}}
+          <div class="col-md-12 col-xs-12">
+            <center><h4>Your Crappy Name</h4></center>
+            <input id="nameBox" type="text" class="input-required form-control" value="Anonymous">
+          </div>
+          <br>
           {{!-- User Input Box --}}
           <div class="col-md-12 col-xs-12">
+            <center><h4>Your Crappier Message</h4></center>
             <textarea id="messageBox" rows="8" class="input-required form-control">Hello Crappy World!</textarea>
           </div>
           {{!-- User Submit Button --}}
@@ -161,5 +168,8 @@
 <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
 {{!-- Link to Translate File --}}
 <script src="/assets/javascript/translate.js"></script>
+
+{{!-- Link in Moment JS --}}
+<script src="/assets/javascript/moment.js"></script>
 {{!-- Link in App JS --}}
 <script src="/assets/javascript/app.js"></script>
