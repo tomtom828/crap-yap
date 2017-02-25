@@ -20,12 +20,11 @@ body {
 }
 
 body{
-  background-color: #997366;
+  background-color: #429ef4;
 }
 
 .panel-warning > .panel-heading {
     background-image: none;
-    background-color: #998066;
+    background-color: #997366;
     color: white;
-
 }
