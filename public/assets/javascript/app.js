@@ -29,34 +29,34 @@ database.ref().on("value", function(snapshot) {
 // Wait for Page to Load for jQuery
 $(document).ready(function(){
 
-
-
   // Submit Button Click Listner
   $('#submitButton').on('click', function(){
 
-    // Get User Name and Message
-    var message = $('#messageBox').val();
+    // Get Author Name and Message
+    var message = $('#messageBox').val().trim();
+    var author = $('#nameBox').val().trim();
 
     // Get Date
-    var today = new Date();
-    var thisMonth = today.getMonth() + 1;
-    var thisDate = today.getDate();
-    var thisYear = today.getFullYear();
+    var dateString = moment().format('MMMM Do YYYY, h:mm:ss a').toString();
 
-    var thisTime = today.toTimeString()
-
-      // Create a String from the Date 
-    var dateString = "";
-    var dateString = dateString.concat(thisMonth, "/", thisDate, "/", thisYear, " - ", thisTime);
+    // Prevent Empty Submissions
+    if(author == ""){
+      alert('Hey Sh*thead, add your name!');
+      return;
+    }
+    else if(message == ""){
+      alert('Hey Sh*thead, add a message!');
+      return;
+    }
 
     // Push New Data to Firebase
     database.ref().push({
-      author: "Somebody",
+      author: author,
       time: dateString,
       message: message
     });
 
-  })
+  });
 
 
 
