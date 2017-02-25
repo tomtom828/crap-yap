@@ -104,6 +104,7 @@ function translate (message){
 }
 
 function convertToEmoji(data){
+	$('#messages').empty();
 	var dataCollection = data; 
 	for(var key in dataCollection){
 		// skip loop if the property is from prototype
