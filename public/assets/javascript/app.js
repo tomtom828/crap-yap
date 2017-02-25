@@ -22,9 +22,13 @@ database.ref().on("value", function(snapshot) {
   // Collect updated Firebase Data
   data = snapshot.val();
 
+  // Clear console and then log recent Data
+  console.clear();
   console.log(data);
 
+  // Convert and Append all Emoji Poo Code
   convertToEmoji(data);
+
 });
 
 
@@ -65,8 +69,8 @@ $(document).ready(function(){
   // Speak Button (Translate Morse Code to Sound)
   $(document).on('click', '.speakButton', function(){
 
-    // NEED to FINISH THIS PART <<<<<<#################@@@@@@@@@@@@@@
-    var translationString = './.--/?????---/';
+    // Get the Morris Code Message from DOM data
+    var translationString = $(this).data('message');
 
     // Split Sound String
     var translationArray = translationString.split('');
@@ -89,13 +93,11 @@ $(document).ready(function(){
           // Play Fart
           if(messageArray[ind] == '.'){
             fartSound.play();
-            console.log('fart')
           }
 
           // Play Toilet
           else if(messageArray[ind] == '-'){
             toiletSound.play();
-            console.log('toilet')
           }
         }, 1000 + (1000 * ind));
       })(i);
