@@ -15,4 +15,6 @@ body {
 #chatRoomMessages {
   height: 440px;
   overflow-y: scroll;
+  padding-left: 25px;
+  padding-right: 25px;
 }
