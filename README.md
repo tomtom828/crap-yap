@@ -6,6 +6,11 @@ A `Node.js` &amp; `Firebase` webapp submitted to the 2017 [Stupid Hackathon](htt
 Please check out the deployed version in Heroku [here](http://crapper-yapper.herokuapp.com/)!
 
 
+## Authors
+[Steve Freeman](https://github.com/sfreeman422) - Full Stack Developer
+[Thomas Thompson](https://github.com/tomtom28) - Full Stack Developer
+
+
 ## Functionality
 On the backend, the app uses `Express` to serve routes.
 
