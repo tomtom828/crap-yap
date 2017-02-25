@@ -19,8 +19,6 @@ database.ref().on("value", function(snapshot) {
   data = snapshot.val();
 
   console.log(data);
-
-  translate(data);
 });
 
 
@@ -47,11 +45,14 @@ $(document).ready(function(){
       return;
     }
 
+    translate(message);
+
     // Push New Data to Firebase
     database.ref().push({
       author: author,
       time: dateString,
-      message: message
+      message: message,
+      translation: translate(message)
     });
 
   });
