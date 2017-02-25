@@ -19,7 +19,7 @@ app.get('/', function (req, res) {
 })
 
 app.get('*', function(req, res) {
-  res.send('<h1>Uhmmmm...</h1> <p>Please navigate back to the <a href="/">homepage</a>, ya dunce!</p>'); 
+  res.send('<h1>Hey Sh*t Head!</h1> <p>Navigate back to the <a href="/">homepage</a>!</p>'); 
 })
 
 // ============================================================
