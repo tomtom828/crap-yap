@@ -19,6 +19,8 @@ database.ref().on("value", function(snapshot) {
   data = snapshot.val();
 
   console.log(data);
+
+  convertToEmoji(data);
 });
 
 
