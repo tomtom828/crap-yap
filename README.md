@@ -32,3 +32,6 @@ After cloning the repo down to your local machine...
 #### If you navigate anywhere but to the `/` route, you will be asked to go back
 ![Nowhere Page](/screenshots/nowhere-page.png)
 
+#### Note that real English is stored in the Database, check the console
+![Console Log](/screenshots/console-log.png)
+
