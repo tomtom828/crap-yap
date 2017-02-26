@@ -9,6 +9,8 @@ And yes, sound effects are included!
 
 Please check out the deployed version in Heroku [here](http://crapper-yapper.herokuapp.com/)!
 
+Also view the [Periscope Video](https://www.periscope.tv/stupidhackathon/1OyJAondkWqKb?t=31m22s)!
+
 
 ## Authors
 [Steve Freeman](https://github.com/sfreeman422) - Full Stack Developer
