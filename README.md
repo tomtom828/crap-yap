@@ -9,17 +9,10 @@ And yes, sound effects are included!
 
 Please check out the deployed version in Heroku [here](http://crapper-yapper.herokuapp.com/)!
 
-An example translation of `aye!` becomes :poop: :toilet: :boom: :toilet: :poop: :toilet: :toilet: :boom: :poop: :boom: !
-
-:poop: = dot
-
-:toilet: = dash
-
-:boom: = pause between letters
-
 
 ## Authors
 [Steve Freeman](https://github.com/sfreeman422) - Full Stack Developer
+
 [Thomas Thompson](https://github.com/tomtom28) - Full Stack Developer
 
 
@@ -27,6 +20,14 @@ An example translation of `aye!` becomes :poop: :toilet: :boom: :toilet: :poop: 
 On the backend, the app uses `Express` to serve routes.
 
 On the frontend, the app uses `Handlebars` for templating and `Bootstrap` as a styling framework. The app also uses `jQuery` and the `Firebase API` to make for instant messaging.
+
+An example translation of `aye!` becomes :poop: :toilet: :boom: :toilet: :poop: :toilet: :toilet: :boom: :poop: :boom: !
+
+:poop: = dot
+
+:toilet: = dash
+
+:boom: = pause between letters
 
 
 ## Cloning down the repo
