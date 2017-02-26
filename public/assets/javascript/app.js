@@ -25,6 +25,14 @@ database.ref().on("value", function(snapshot) {
   console.clear();
   console.log(data);
 
+  // Push data to server (for the viewing data link)
+  var baseURL = window.location.origin;
+  $.ajax({
+    url: baseURL + '/post/messages',
+    type: 'POST',
+    data: data
+  });
+
   // Convert and Append all Emoji Poo Code
   convertToEmoji(data);
 
