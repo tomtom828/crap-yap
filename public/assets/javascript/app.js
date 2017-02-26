@@ -44,14 +44,18 @@ $(document).ready(function(){
     // Get Date
     var dateString = moment().format('MMMM Do YYYY, h:mm:ss a').toString();
 
-    // Prevent Empty Submissions
+    // Prevent Empty Submissions or too many Chars
     if(author == ""){
-      alert('Hey Sh*thead, add your name!');
+      alert('Hey Sh*t Head, add your name!');
       return;
     }
     else if(message == ""){
-      alert('Hey Sh*thead, add a message!');
+      alert('Hey Sh*t Head, add a message!');
       return;
+    }
+    else if(message.length > 150){
+      alert('This app is too sh*tty! 150 characters max!');
+      return; // <-- This very really hackable. It's a Shitty App about Shit, what did you expect?
     }
     //Clear out the textbox when we submit.
     $('#messageBox').val('');
