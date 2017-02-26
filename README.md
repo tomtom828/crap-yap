@@ -12,7 +12,9 @@ Please check out the deployed version in Heroku [here](http://crapper-yapper.her
 An example translation of `aye!` becomes :poop: :toilet: :boom: :toilet: :poop: :toilet: :toilet: :boom: :poop: :boom: !
 
 :poop: = dot
+
 :toilet: = dash
+
 :boom: = pause between letters
 
 
