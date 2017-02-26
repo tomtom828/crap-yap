@@ -1,7 +1,11 @@
 # :poop: Crapper Yapper :toilet:
 The crappiest chat app known to man!
 
-A `Node.js` &amp; `Firebase` webapp submitted to the 2017 [Stupid Hackathon](http://www.stupidhackathon.com/)! Write your message in English and have it converted to Morse Code using :poop: and :toilet: emojis. And yes, sound effects are included!
+A `Node.js` &amp; `Firebase` webapp submitted to the 2017 [Stupid Hackathon](http://www.stupidhackathon.com/)! Write your message in English and have it converted to Morse Code using :poop: and :toilet: emojis. Within each word, the letters are seperated with a :boom:. And anything that is not a letter (spaces, numbers, ?, !, etc) are shown noramlly. 
+
+And yes, sound effects are included!
+
+An example translation of `aye!` becomes :poop: :toilet: :boom: :toilet: :poop: :toilet: :toilet: :boom: :poop: :boom: !
 
 Please check out the deployed version in Heroku [here](http://crapper-yapper.herokuapp.com/)!
 
